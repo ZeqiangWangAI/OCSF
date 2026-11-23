@@ -1,0 +1,52 @@
+# Python & environments
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+dist/
+build/
+
+# macOS & OS artifacts
+.DS_Store
+._*
+
+# Local clinical data & model checkpoints (never commit PHI or PhysioNet records)
+data/
+runs/
+cache/
+logs/
+*.pt
+*.safetensors
+*.jsonl
+*.jsonl.gz
+
+# LaTeX build intermediates
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+.olcli.json
+
+# Keep manuscripts, submission bundles, figure assets, and raw result logs local
+paper/
+assets/
+results/
+submission/
+SPEC.md
+scripts/build_jamia_tables.py
+scripts/build_latex_tables.py
+scripts/build_ocsf_slides.py
+scripts/make_paper_figures.py
+scripts/generate_evidence_report.py
+
+# Local slide decks & scratch notes
+OCSF_Architecture.pptx
+OCSF_ Zero-Training Clinical State Fields.png
+paper/PAPER_PLAN.md
+SPEC.md

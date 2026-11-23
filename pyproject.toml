@@ -1,0 +1,34 @@
+[project]
+name = "ocsf-clinical-coding"
+version = "1.0.0"
+description = "Ontology-Compiled 2D Clinical State Fields with Bidirectional Diffusion Encoders for Zero-Training Cross-Ontology Medical Coding"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Zeqiang Wang", email = "zeqiang.wang@surrey.ac.uk" },
+    { name = "Jon Johnson", email = "jon.johnson@ucl.ac.uk" },
+    { name = "Nishanth Sastry", email = "n.sastry@surrey.ac.uk" },
+    { name = "Suparna De", email = "s.de@surrey.ac.uk" },
+]
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.13",
+    "scikit-learn>=1.5",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
